@@ -79,12 +79,13 @@ WSGI_APPLICATION = 'ForumAPI.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'ForumAPI',
-        'USER': 'postgres',
-        'PASSWORD': '2112',
-        'HOST': 'localhost',
-        'PORT': '5432',
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
+        # 'NAME': 'ForumAPI',
+        # 'USER': 'postgres',
+        # 'PASSWORD': '2112',
+        # 'HOST': 'localhost',
+        # 'PORT': '5432',
     }
 }
 
